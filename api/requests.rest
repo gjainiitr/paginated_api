@@ -1,0 +1,1 @@
+GET http://localhost:3000/api/gethotels?page=10&limit=100
