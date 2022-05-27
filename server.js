@@ -7,8 +7,7 @@ var Hotel = require('./api/models/apiModel');//Optional
 
 const mongoose = require('mongoose');
 
-//const url = 'mongodb://localhost:27017/MoodMe';
-const url = 'mongodb+srv://govindjain:8ZX56C7tnPb783y@cluster0.spjhx.mongodb.net/MoodMe?retryWrites=true&w=majority'
+const url = 'mongodb://localhost:27017/MoodMe';
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true});
 
 const db = mongoose.connection;
@@ -23,4 +22,3 @@ app.use(routes);
 
 app.listen(port); 
 console.log("RESTful API server started on port: " + port);
-
